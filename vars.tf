@@ -13,6 +13,15 @@ variable "sku" {
   type = string
   default = "free"
 }
+
+
+variable "public_network_access_enabled" {
+  description = "Whether or not public network access is allowed for this resource."
+  type        = bool
+  default     = false
+
+}
+
 variable "resource_group_name" {
   description = "example-resources"
   default = "resource_group"
